@@ -17,10 +17,16 @@ There are a lot of other repositories that contain the word **Stacey** and a par
 
 ## Improvements
 
-### 15.07.2019
+### 15.07.2019 - Version 3.0.0 from Anthony Kolber
 
 The original version Stacey 3.0.0 has the following issues:
 
-Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; Markdown_Parser has a deprecated constructor in \app\parsers\markdown-parser.inc.php on line 221
+    Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; Markdown_Parser has a deprecated constructor in \app\parsers\markdown-parser.inc.php on line 221
+    
+    Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; MarkdownExtra_Parser has a deprecated constructor in \app\parsers\markdown-parser.inc.php on line 1687
 
-Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; MarkdownExtra_Parser has a deprecated constructor in \app\parsers\markdown-parser.inc.php on line 1687
+### 15.07.2019 - Version 3.1.0 new Markdown library
+
+* \app\parsers\markdown-parser.inc.php - changed for the new markdown parser
+* \app\parsers\php-markdown - files of the markdown library from Michel Fortin michelf
+* \app\stacey.inc.php - Version number 3.1.0
