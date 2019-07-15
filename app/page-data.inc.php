@@ -201,11 +201,13 @@ Class PageData {
       return array();
     }
   }
+// create_function() is in PHP 7.2 deprecated
+// see https://stackoverflow.com/questions/48161526/php-7-2-function-create-function-is-deprecated zu ändern von
 
   static function preparse_text($text) {
-    $content = preg_replace_callback('/:\s*(\n)?\+{3,}([\S\s]*?)\+{3,}/', create_function('$match',
-      'return ": |\n  ".preg_replace("/\n/", "\n  ", $match[2]);'
-    ), $text);
+	  $delimiter=": |\n  ";
+    //$content = preg_replace_callback('/:\s*(\n)?\+{3,}([\S\s]*?)\+{3,}/', create_function('$match', 'return ": |\n  ".preg_replace("/\n/", "\n  ", $match[2]);'), $text);
+    $content = preg_replace_callback('/:\s*(\n)?\+{3,}([\S\s]*?)\+{3,}/', function($match) {return ": |\n  ".preg_replace("/\n/", "\n  ", $match[2]);}, $text);
     return $content;
   }
 

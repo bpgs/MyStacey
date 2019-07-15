@@ -30,3 +30,12 @@ The original version Stacey 3.0.0 has the following issues:
 * \app\parsers\markdown-parser.inc.php - changed for the new markdown parser
 * \app\parsers\php-markdown - files of the markdown library from Michel Fortin michelf
 * \app\stacey.inc.php - Version number 3.1.0
+
+Under PHP 7.2 and above there is the following issue:
+
+    Deprecated: Function create_function() is deprecated in \app\page-data.inc.php on line 207
+    
+### 15.07.2019 - Version 3.1.1 new Markdown library
+
+* \app\stacey.inc.php - Version number 3.1.1
+* \app\page-data.inc.php - adopted for PHP 7.2
