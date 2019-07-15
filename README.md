@@ -35,7 +35,7 @@ Under PHP 7.2 and above there is the following issue:
 
     Deprecated: Function create_function() is deprecated in \app\page-data.inc.php on line 207
     
-### 15.07.2019 - Version 3.1.1 new Markdown library
+### 15.07.2019 - Version 3.1.1 - adopted for PHP 7.2
 
 * \app\stacey.inc.php - Version number 3.1.1
 * \app\page-data.inc.php - adopted for PHP 7.2
